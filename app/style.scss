@@ -1,0 +1,19 @@
+@import './css/variables.scss';
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+}
+
+body {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    color: $textColor;
+    background-color: $lightThemeColor;
+}

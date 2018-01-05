@@ -1,0 +1,62 @@
+@import '../../css/variables.scss';
+phoenix-header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: hsla(10, 61%, 100%, 0.75);
+    box-shadow: 1px 2px 5px $shadowColor;
+    phoenix-logo {
+        display: flex;
+        width: 30%;
+        height: 100%;
+        align-items: center;
+        >a {
+            display: flex;
+            height: inherit;
+            align-items: center;
+            text-decoration: none;
+            color: $textColor;
+            >img {
+                width: 60px;
+                margin-right: 20px;
+            }
+            >h1 {
+                display: inline-flex;
+            }
+            &:hover,
+            &:active {
+                cursor: pointer;
+                text-decoration: none;
+                color: $textColor;
+            }
+        }
+    }
+    phoenix-menu {
+        display: flex;
+        width: 55%;
+        height: 100%;
+        align-items: center;
+        a {
+            display: flex;
+            width: 150px;
+            height: 100%;
+            padding: 0px 20px;
+            text-decoration: none;
+            align-items: center;
+            justify-content: center;
+            color: $textColor;
+            font-size: 22px;
+            &:hover,
+            &:focus {
+                cursor: pointer;
+                text-decoration: none;
+                background-color: transparentize($themeColor, 0.3);
+                color: $textColor;
+            }
+        }
+    }
+}

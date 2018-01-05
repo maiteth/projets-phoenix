@@ -1,0 +1,3 @@
+# ignore all packages in node_modules
+node_modules/
+app/wpk/
